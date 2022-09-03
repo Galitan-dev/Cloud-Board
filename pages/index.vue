@@ -1,8 +1,10 @@
 <template>
-  <WebViewer
-    :path="`${publicPath}webviewer`"
-    url="https://pdftron.s3.amazonaws.com/downloads/pl/webviewer-demo.pdf"
-  />
+  <div>
+    <WebViewer
+      :path="`${publicPath}webviewer`"
+      url="https://pdftron.s3.amazonaws.com/downloads/pl/webviewer-demo.pdf"
+    />
+  </div>
 </template>
 
 <script lang="ts">

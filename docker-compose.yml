@@ -1,0 +1,24 @@
+version: '3'
+name: cloud-board
+
+services:
+  api:
+    container_name: cloud-board-api
+    build:
+      context: ../Cloud-Board-API
+      target: development
+    volumes:
+      - ../Cloud-Board-API:/home/app
+    ports:
+      - 3333:3333
+
+  www:
+    container_name: cloud-board-www
+    build:
+      context: .
+    volumes:
+      - .:/home/app
+    ports:
+      - 3000:3000
+    depends_on:
+      - api
