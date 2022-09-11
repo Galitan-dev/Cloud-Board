@@ -1,10 +1,10 @@
 <template>
-  <div>{{ hello }}</div>
+  <WebViewer />
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator';
 import { Context } from '@nuxt/types';
+import { Component, Vue } from 'nuxt-property-decorator';
 
 @Component({
   name: 'IndexPage'

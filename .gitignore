@@ -92,3 +92,4 @@ sw.*
 # nest.js build output
 .nest
 
+webviewer
