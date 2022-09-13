@@ -1,0 +1,13 @@
+.github
+.husky
+.nest
+.nuxt
+.vscode
+client/static/webviewer
+node_modules
+.*
+commitlint.config.js
+stylelint.config.js
+docker*
+README.md
+yarn.lock
