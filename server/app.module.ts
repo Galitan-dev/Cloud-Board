@@ -5,19 +5,19 @@ import { AppService } from './app.service';
 import { UserModule } from './user/user.module';
 
 @Module({
-  imports: [
-    UserModule,
-    TypeOrmModule.forRoot({
-      type: 'mysql',
-      host: 'cloud-board-db',
-      username: 'cloud',
-      password: 'board',
-      database: 'cloud-board',
-      autoLoadEntities: true,
-      synchronize: true
-    })
-  ],
-  controllers: [AppController],
-  providers: [AppService]
+	imports: [
+		UserModule,
+		TypeOrmModule.forRoot({
+			type: 'mysql',
+			host: 'cloud-board-db',
+			username: 'cloud',
+			password: 'board',
+			database: 'cloud-board',
+			autoLoadEntities: true,
+			synchronize: true
+		})
+	],
+	controllers: [AppController],
+	providers: [AppService]
 })
 export class AppModule {}
