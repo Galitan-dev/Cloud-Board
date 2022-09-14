@@ -4,21 +4,24 @@ name: cloud-board
 services:
   db:
     container_name: cloud-board-db
-    image: mongo:latest
+    image: mariadb
+    restart: always
     environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: root
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_USER: cloud
+      MARIADB_PASSWORD: board
+    volumes:
+      - cloud-board-data:/var/lib/mysql
 
   db-adminer:
     container_name: cloud-board-db-adminer
-    image: mongo-express
+    image: adminer
     restart: always
     ports:
-      - 3333:8081
+      - 3300:8080
     environment:
-      ME_CONFIG_MONGODB_ADMINUSERNAME: root
-      ME_CONFIG_MONGODB_ADMINPASSWORD: root
-      ME_CONFIG_MONGODB_URL: mongodb://root:root@cloud-board-db:27017/
+      ADMINER_DESIGN: hydra
+      ADMINER_DEFAULT_SERVER: cloud-board-db
     depends_on:
       - db
 
@@ -33,7 +36,7 @@ services:
     ports:
       - 3030:80
     environment:
-      MONGODB_URI: mongodb://api:api@cloud-board-db:27017/cloud-board
+      MONGODB_URI: mongodb://cloud-board:cloud-board@cloud-board-db:27017/cloud-board
     depends_on:
       - db
 
@@ -57,3 +60,6 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
       - 3003:8080
+
+volumes:
+  cloud-board-data:
