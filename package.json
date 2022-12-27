@@ -55,7 +55,7 @@
 		"@nuxtjs/eslint-module": "^3.0.2",
 		"@nuxtjs/stylelint-module": "^4.1.0",
 		"@typescript-eslint/eslint-plugin": "^5.37.0",
-		"@typescript-eslint/parser": "^5.37.0",
+		"@typescript-eslint/parser": "^5.47.1",
 		"eslint": "^8.23.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-nuxt": "^3.1.0",
