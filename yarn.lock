@@ -1277,18 +1277,18 @@
     tslib "2.4.0"
     uuid "8.3.2"
 
-"@nestjs/core@^9.0.11":
-  version "9.0.11"
-  resolved "https://registry.npmjs.org/@nestjs/core/-/core-9.0.11.tgz"
-  integrity sha512-DYyoiWSGebDAG8WSfG/ue88HBU39kAJTi2YXftWdVSl1LFveV+pwKY83P2qX0ND38TS8WktFYpaMkXslf97BBQ==
+"@nestjs/core@^9.3.1":
+  version "9.3.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-9.3.1.tgz#af01bfed0d46443d3416d42ceb8e5f41373258ad"
+  integrity sha512-hLVfImzHu1vdcViEhIRnm7x3EBk+YiV7XVTJNz6n2Ly8a6t7IFBoJkGrZkE8ZTytnfbJZO0Vtp54ZBllxx3MwA==
   dependencies:
     "@nuxtjs/opencollective" "0.3.2"
     fast-safe-stringify "2.1.1"
     iterare "1.2.1"
     object-hash "3.0.0"
     path-to-regexp "3.2.0"
-    tslib "2.4.0"
-    uuid "8.3.2"
+    tslib "2.4.1"
+    uuid "9.0.0"
 
 "@nestjs/mapped-types@*":
   version "1.1.0"
@@ -10724,10 +10724,15 @@ tsconfig-paths@^3.14.1:
     minimist "^1.2.6"
     strip-bom "^3.0.0"
 
-tslib@2.4.0, tslib@^2, tslib@^2.0.3, tslib@^2.1.0, tslib@^2.3.1:
+tslib@2.4.0:
   version "2.4.0"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.4.0.tgz"
   integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
+
+tslib@2.4.1, tslib@^2, tslib@^2.0.3, tslib@^2.1.0, tslib@^2.3.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.1.tgz#0d0bfbaac2880b91e22df0768e55be9753a5b17e"
+  integrity sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==
 
 tslib@^1.8.1, tslib@^1.9.0:
   version "1.14.1"
@@ -11052,6 +11057,11 @@ uuid@8.3.2, uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
+
+uuid@9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-9.0.0.tgz#592f550650024a38ceb0c562f2f6aa435761efb5"
+  integrity sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==
 
 v8-compile-cache@^2.3.0:
   version "2.3.0"
