@@ -22,7 +22,7 @@
 		"*.**": "prettier --check --ignore-unknown"
 	},
 	"dependencies": {
-		"@nestjs/common": "^9.0.11",
+		"@nestjs/common": "^9.3.3",
 		"@nestjs/core": "^9.0.11",
 		"@nestjs/mapped-types": "*",
 		"@nestjs/platform-express": "^9.0.11",
